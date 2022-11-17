@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      src="https://kit.fontawesome.com/5df739f879.js"
+      crossorigin="anonymous"
+    ></script>
     <title>MULTOR</title>
   </head>
   <body>
@@ -33,7 +36,9 @@
       <div class="features_features-list">
         <!-- Feature 1 -->
         <div class="feature">
-          <span class="feature-logo"></span>
+          <span class="feature-logo">
+            <i class="fa-solid fa-sharp fa-tv lg"></i>
+          </span>
           <div class="feature-description">
             <h4>Benefit 1</h4>
             <p>
@@ -44,7 +49,9 @@
         </div>
         <!-- Feature 2 -->
         <div class="feature">
-          <span class="feature-logo"></span>
+          <span class="feature-logo">
+            <i class="fa-solid fa-sharp fa-heart lg"></i>
+          </span>
           <div class="feature-description">
             <h4>Benefit 2</h4>
             <p>
@@ -55,7 +62,9 @@
         </div>
         <!-- Feature 3 -->
         <div class="feature">
-          <span class="feature-logo"></span>
+          <span class="feature-logo">
+            <i class="fa-sharp fa-solid fa-award lg"></i>
+          </span>
           <div class="feature-description">
             <h4>Benefit 3</h4>
             <p>
@@ -65,7 +74,25 @@
           </div>
         </div>
       </div>
-      <div class="features_form"></div>
+      <div class="features-form">
+        <h2 class="features-form_header">Schedule an Appointment</h1>
+        <p class="features-form_paragraph">
+            Here, let visitors know what will happen when they complete your form.
+        </p>
+        <form action="">
+          <input placeholder="First Name*"  type="text" name="firstName">
+          <input placeholder="Last Name*" type="text" name="lastName">
+          <input placeholder="Email*" type="email" name="email">
+          <input placeholder="Phone Number*" type="tel" name="phone">
+          <select name="type" id="type">
+            <option value="type1">Type of Appointment</option>
+            <option value="type1">Type 1</option>
+            <option value="type2">Type 2</option>
+            <option value="type3">Type 3</option>
+          </select>
+          <button class="schedule-button" type="submit">SCHEDULE NOW</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

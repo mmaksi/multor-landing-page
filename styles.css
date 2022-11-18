@@ -173,3 +173,87 @@ body {
 .schedule-button:hover {
   cursor: pointer;
 }
+
+/* Section 3: Content */
+.content {
+  background-color: rgb(232, 251, 251);
+  text-align: center;
+  padding: 64px 45rem;
+  position: relative;
+  height: 360px;
+}
+
+.content-title {
+  font-size: 4rem;
+}
+
+.content-paragraph {
+  font-size: 2rem;
+}
+
+.content-video {
+  width: 650px;
+  position: absolute;
+  left: 50%;
+  margin-left: -325px;
+}
+
+/* Section 4: Testimonials */
+.testimonials {
+  margin: 300px var(--margin);
+  text-align: center;
+}
+
+.testimonials-header {
+  letter-spacing: 0.4rem;
+  color: rgb(0, 194, 197);
+  color: var(--main-color);
+}
+
+.testimonials-reviews {
+  display: flex;
+  gap: 10rem;
+  margin-top: 50px;
+}
+
+.review-stars {
+  color: black;
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(0, 194, 197);
+}
+
+.review-text {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 10px 0 30px 0;
+  color: var(--main-color);
+}
+
+.review {
+  text-align: left;
+}
+
+.reviewer-pic {
+  width: 150px;
+}
+
+.reviewer-owner {
+  margin: 0 0 10px 0;
+}
+
+.reviewer-location {
+  margin: 0;
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewer-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  font-size: 1.3rem;
+}

@@ -1,6 +1,6 @@
 :root {
   --margin: 140px;
-  --main-color: rgb(21, 47, 46);
+  --main-color: rgb(21, 49, 48);
   --secondary-color: rgb(0, 184, 187);
 }
 
@@ -12,6 +12,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
+  color: var(--main-color);
 }
 
 /* width */
@@ -200,7 +201,7 @@ body {
 
 /* Section 4: Testimonials */
 .testimonials {
-  margin: 300px var(--margin);
+  margin: 300px var(--margin) var(--margin);
   text-align: center;
 }
 
@@ -256,4 +257,69 @@ body {
   flex-direction: column;
   margin: 0 20px;
   font-size: 1.3rem;
+}
+
+/* Section 5: Benefits */
+.benefits {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 0 var(--margin) var(--margin);
+}
+
+.benefit-header {
+  font-size: 2.2rem;
+}
+
+.benefit-text {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.benefit-image {
+  width: 100%;
+}
+
+/* Section 6: About */
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: 0 var(--margin);
+  gap: 100px;
+  margin-bottom: var(--margin);
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  font-size: 4.5rem;
+}
+
+.about-text {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Section 7: Footer */
+.footer {
+  height: 134px;
+  background-color: var(--main-color);
+}
+
+.footer-logo {
+  font-size: 3.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--margin);
+  color: whitesmoke;
+  font-size: 1.4rem;
 }

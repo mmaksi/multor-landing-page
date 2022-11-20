@@ -328,7 +328,7 @@ body {
 
 @media only screen and (max-device-width: 480px) {
   :root {
-    --margin: 0rem;
+    --margin: 30px;
     --paragraph-margin: 70px;
     --main-color: rgb(21, 49, 48);
     --secondary-color: rgb(0, 184, 187);
@@ -343,13 +343,20 @@ body {
     box-sizing: inherit;
   }
 
-  .title,
-  .logo {
-    margin-left: var(--margin);
+  .section__main {
+    padding-bottom: 5rem;
   }
 
-  .section__main {
-    padding-bottom: 11.8rem;
+  .title,
+  .logo {
+    margin-left: 0;
+    padding-left: var(--margin);
+  }
+
+  .logo {
+    font-size: 5.5rem;
+    margin-bottom: 0;
+    padding-top: 5.4rem;
   }
 
   .title {
@@ -359,27 +366,22 @@ body {
 
   .title_main {
     font-size: 5rem;
+    margin: 20px 0;
   }
 
   .title_paragraph {
+    margin: 0;
     font-size: 2rem;
     font-weight: 400;
     color: var(--main-color);
     width: 100%;
-    margin-top: 3rem;
-  }
-
-  .logo {
-    font-size: 5.5rem;
-    margin-bottom: 5rem;
-    padding-top: 5.4rem;
   }
 
   /* Section 2 */
   .features {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 0px;
     background-color: whitesmoke;
   }
 
@@ -389,11 +391,13 @@ body {
     font-size: 4rem;
     color: var(--secondary-color);
     width: 50px;
+    text-align: center;
   }
 
   .features_features-list {
-    margin-left: var(--margin);
-    margin-top: var(--margin);
+    margin-left: 0;
+    padding-left: var(--margin);
+    margin-top: var(--paragraph-margin);
     margin-bottom: calc(150px - 53px);
     width: 100%;
   }
@@ -431,7 +435,7 @@ body {
     background-color: var(--main-color);
     padding: 53px;
     position: relative;
-    bottom: 135px;
+    bottom: var(--paragraph-margin);
     margin-left: 0; /* total distance between form and benefits div is gap + margin-left */
     margin: auto;
   }
@@ -484,24 +488,25 @@ body {
   }
 
   .content-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 0;
+    padding: var(--margin) var(--margin) 0;
   }
 
   .content-paragraph {
     font-size: 2rem;
+    padding: 0 var(--margin);
   }
 
   .content-video {
     width: 90%;
     position: static;
-    margin-left: 0px;
     margin: auto;
   }
 
   /* Section 4: Testimonials */
   .testimonials {
-    margin: 200px var(--margin) var(--margin);
+    margin: 250px var(--margin) var(--paragraph-margin);
     text-align: center;
   }
 
@@ -520,13 +525,13 @@ body {
 
   .review-stars {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     color: rgb(0, 194, 197);
   }
 
   .review-text {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     margin: 10px 0 30px 0;
     color: var(--main-color);
@@ -564,12 +569,13 @@ body {
   .benefits {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     margin: 0 var(--margin) var(--margin);
   }
 
   .benefit-header {
     font-size: 2.2rem;
+    margin: 0.5rem 0;
   }
 
   .benefit-text {
@@ -585,9 +591,8 @@ body {
   .about {
     display: flex;
     flex-direction: column;
-    margin: 0 var(--margin);
-    gap: 100px;
-    margin-bottom: var(--margin);
+    margin: var(--paragraph-margin) var(--margin);
+    gap: 30px;
   }
 
   .about-info {
@@ -597,10 +602,29 @@ body {
 
   .about-header {
     font-size: 4.5rem;
+    margin: 0;
   }
 
   .about-text {
     font-size: 2rem;
-    margin: 0;
+    margin: 2rem 0;
+  }
+
+  /* Section 7: footer */
+  .footer-logo {
+    font-size: 3rem;
+  }
+
+  .footer {
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--margin);
+    color: whitesmoke;
+    font-size: 1.4rem;
+    gap: 10px;
   }
 }

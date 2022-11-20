@@ -1,4 +1,5 @@
 :root {
+  --paragraph-margin: 70px;
   --margin: 140px;
   --main-color: rgb(21, 49, 48);
   --secondary-color: rgb(0, 184, 187);
@@ -97,7 +98,6 @@ body {
   margin-top: var(--margin);
   margin-bottom: calc(150px - 53px);
   width: 30%;
-  height: 0px;
 }
 
 .feature {
@@ -322,4 +322,285 @@ body {
   padding: 0 var(--margin);
   color: whitesmoke;
   font-size: 1.4rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-device-width: 480px) {
+  :root {
+    --margin: 0rem;
+    --paragraph-margin: 70px;
+    --main-color: rgb(21, 49, 48);
+    --secondary-color: rgb(0, 184, 187);
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .title,
+  .logo {
+    margin-left: var(--margin);
+  }
+
+  .section__main {
+    padding-bottom: 11.8rem;
+  }
+
+  .title {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .title_main {
+    font-size: 5rem;
+  }
+
+  .title_paragraph {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--main-color);
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .logo {
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
+    padding-top: 5.4rem;
+  }
+
+  /* Section 2 */
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: whitesmoke;
+  }
+
+  .fa-tv,
+  .fa-heart,
+  .fa-award {
+    font-size: 4rem;
+    color: var(--secondary-color);
+    width: 50px;
+  }
+
+  .features_features-list {
+    margin-left: var(--margin);
+    margin-top: var(--margin);
+    margin-bottom: calc(150px - 53px);
+    width: 100%;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .feature-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 53px;
+  }
+
+  .feature-description h4 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--main-color);
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .feature-description p {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: var(--main-color);
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+  }
+
+  .features-form {
+    width: 90%;
+    background-color: var(--main-color);
+    padding: 53px;
+    position: relative;
+    bottom: 135px;
+    margin-left: 0; /* total distance between form and benefits div is gap + margin-left */
+    margin: auto;
+  }
+
+  .features-form_header {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+  }
+
+  .features-form_paragraph {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .features-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-form form > * {
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+
+  .schedule-button {
+    border-radius: 6px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+
+  .schedule-button:hover {
+    cursor: pointer;
+  }
+
+  /* Section 3: Content */
+  .content {
+    background-color: rgb(232, 251, 251);
+    text-align: center;
+    padding: 0;
+    position: relative;
+    height: 360px;
+  }
+
+  .content-title {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .content-paragraph {
+    font-size: 2rem;
+  }
+
+  .content-video {
+    width: 90%;
+    position: static;
+    margin-left: 0px;
+    margin: auto;
+  }
+
+  /* Section 4: Testimonials */
+  .testimonials {
+    margin: 200px var(--margin) var(--margin);
+    text-align: center;
+  }
+
+  .testimonials-header {
+    letter-spacing: 0.4rem;
+    color: rgb(0, 194, 197);
+    color: var(--main-color);
+  }
+
+  .testimonials-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-top: 50px;
+  }
+
+  .review-stars {
+    color: black;
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(0, 194, 197);
+  }
+
+  .review-text {
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 10px 0 30px 0;
+    color: var(--main-color);
+  }
+
+  .review {
+    text-align: left;
+  }
+
+  .reviewer-pic {
+    width: 150px;
+  }
+
+  .reviewer-owner {
+    margin: 0 0 10px 0;
+  }
+
+  .reviewer-location {
+    margin: 0;
+  }
+
+  .reviewer-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .reviewer-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    font-size: 1.3rem;
+  }
+
+  /* Section 5: Benefits */
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 var(--margin) var(--margin);
+  }
+
+  .benefit-header {
+    font-size: 2.2rem;
+  }
+
+  .benefit-text {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .benefit-image {
+    width: 100%;
+  }
+
+  /* Section 6: About */
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--margin);
+    gap: 100px;
+    margin-bottom: var(--margin);
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-header {
+    font-size: 4.5rem;
+  }
+
+  .about-text {
+    font-size: 2rem;
+    margin: 0;
+  }
 }

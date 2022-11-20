@@ -213,7 +213,7 @@ body {
 
 .testimonials-reviews {
   display: flex;
-  gap: 10rem;
+  gap: 100px;
   margin-top: 50px;
 }
 
@@ -519,7 +519,7 @@ body {
   .testimonials-reviews {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 50px;
     margin-top: 50px;
   }
 
